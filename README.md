@@ -1,6 +1,6 @@
 # programacion-estructurada-python
 
-## [Preguntas](C:\Users\CursosTardes\Python\programacion-estructurada-python\questions.md) 🔎📃
+## [Preguntas](\questions.md) 🔎📃
 
 ## Recordatorio 
 
