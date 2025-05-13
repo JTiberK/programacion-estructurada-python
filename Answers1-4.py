@@ -1,5 +1,6 @@
-print("TIPOS DE DATOS EN PYTHON")
+print("\nTIPOS DE DATOS EN PYTHON")
 
+# ========== Pregunta 1. Tipos Primitivos y Estructurados ==========
 # Tipos Primitivos
 numero_entero = 10
 numero_flotante = 3.14
@@ -14,19 +15,20 @@ mi_diccionario = {"nombre": "Juan", "edad": 30}
 mi_conjunto = {7, 8, 9}
 
 # Imprimir los tipos
-print("--------Primitivos----------")
+print("\n=========== Pregunta 1. Primitivos ===========")
 print(type(numero_entero))
 print(type(numero_flotante))
 print(type(texto))
 print(type(es_verdadero))
 print(type(nada))
-print("--------Estructurados----------")
+print("\n=========== Pregunta 1. Estructurados ===========")
 print(type(mi_lista))
 print(type(mi_tupla))
 print(type(mi_diccionario))
 print(type(mi_conjunto))
 
-print("\n--------Ejercicio Ambito de las Variables----------")
+# ========== Pregunta 2. Variables y Ámbito de Utilización ==========
+print("\n===== Pregunta 2. Ejercicio Ambito de las Variables =========")
 # Variable global
 mensaje = "Hola yo soy una variable global"
 
@@ -53,12 +55,12 @@ modificar_variable_global()
 print("Después de modificar la variable global:")
 print("Variable global:", mensaje)
 
-
+# ========== Pregunta 3. Operadores Aritméticos y Lógicos ==========
 # Operadores Aritméticos
 a = 10
 b = 3
 
-print("\n=== Operadores Aritméticos ===")
+print("\n====== Pregunta 3. Operadores Aritméticos ========")
 print("Suma:", a + b)            # 13
 print("Resta:", a - b)           # 7
 print("Multiplicación:", a * b)  # 30
@@ -71,7 +73,7 @@ print("Potencia:", a ** b)       # 1000
 x = True
 y = False
 
-print("\n=== Operadores Lógicos ===")
+print("\n===== Pregunta 3. Operadores Lógicos =====")
 print("x AND y:", x and y)       # False
 print("x OR y:", x or y)         # True
 print("NOT x:", not x)           # False
@@ -90,8 +92,8 @@ print("¿Nota aprobada entre 60 y 100?", nota >= 60 and nota <= 100)  # True
 
 
 
-
-print("\n=== Programa que clasifica un número y muestra una cuenta regresiva ===")
+# === Pregunta 4. Estructuras de Control ===
+print("\n=== Pregunta 4. Programa que clasifica un número y muestra una cuenta regresiva ===")
 
 # ESTRUCTURAS CONDICIONALES
 global numero_es
@@ -116,66 +118,4 @@ print("\n\nCuenta regresiva del número introducido:")
 while numero_es > 0:
     print(numero_es)
     numero_es-= 1
-print("¡Final!")
-
-
-print("\n\n===Procedimiento sin parámetros===")
-def saludar():
-    print("Hola, bienvenido al programa.")
-
-saludar()
-
-print("\n===Función con parámetros (con retorno)===")
-def sumar(a, b):
-    return a + b
-
-print("Suma de 4 y 5:", sumar(4, 5))
-
-print("\n===Procedimiento con parámetros (sin retorno)===")
-def mostrar_cuadrado(valor):
-    print(f"El cuadrado de {valor} es {valor ** 2}") 
-
-mostrar_cuadrado(7)
-
-print("\n===Parámetros por valor (inmutable: int)===")
-def intentar_cambiar_valor(x):
-    print("Antes de cambiar:", x)
-    x = 100
-    print("Después de cambiar:", x)
-
-# Parámetros por referencia (mutable: lista)
-def agregar_elemento(lista):
-    print("Antes de agregar:", lista)
-    lista.append("nuevo")
-    print("Después de agregar:", lista)
-
-
-# Parte a: Funciones y procedimientos
-# Parte b: Valor vs. Referencia
-print("--- Por valor (int) ---")
-numero = 50
-intentar_cambiar_valor(numero)
-print("Fuera de la función:", numero)  # Sigue siendo 50
-
-print("\n--- Por referencia (lista) ---")
-mi_lista = ["a", "b"]
-agregar_elemento(mi_lista)
-print("Fuera de la función:", mi_lista)  # Ahora incluye "nuevo"
-
-print("\n===Procedimiento con parámetros (sin retorno)===")
-def factorial(n):
-    # Caso base
-    if n == 0 or n == 1:
-        return 1
-    # Caso recursivo
-    else:
-        return n * factorial(n - 1)
-
-# Ejemplo de uso
-print("\n=========== Ejemplo de Factorial Recursivo ===========")
-numero = int(input("Ingresa un número para calcular su factorial: "))
-if numero < 0:
-    print("El factorial no está definido para números negativos.")
-else:
-    resultado = factorial(numero)
-    print(f"El factorial de {numero} es {resultado}")
+print("¡Final!\n")

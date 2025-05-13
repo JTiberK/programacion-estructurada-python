@@ -1,0 +1,3 @@
+Este es un ejemplo de escritura en fichero.
+Línea 2: Hola Mundo
+Línea 3: Bienvenido a Python
