@@ -1,7 +1,8 @@
 # programacion-estructurada-python
 
+## [Preguntas](C:\Users\CursosTardes\Python\programacion-estructurada-python\questions.md) 🔎📃
 
-## Recordatorio
+## Recordatorio 
 
 Instalar la última versió de python desde https://www.python.org/
 
@@ -12,4 +13,6 @@ Extension en VS CODE:
     Python extension for Visual Studio Code
 
 ---
+
+
 
