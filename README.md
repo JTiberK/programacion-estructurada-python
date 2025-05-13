@@ -1,6 +1,6 @@
 # programacion-estructurada-python
 
-## [Preguntas](\questions.md) 🔎📃
+## [Preguntas](/questions.md) 🔎📃
 
 ## Recordatorio 
 
